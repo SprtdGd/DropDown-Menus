@@ -1,0 +1,75 @@
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* Main Unordered-List Stylings  */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+nav ul li {
+    display:inline-block;
+}
+
+nav a {  
+    display: block;
+    padding: 0 20px;
+    background: gray;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+nav a:hover { 
+	background-color: darkgray; 
+    color: white;
+}
+
+
+/* Dropdown UL */
+
+/* Hide Dropdowns by Default */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+
+}
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* Dropdown - <li> properties */
+
+nav ul ul li {
+    width: 100%;
+    display: list-item;
+    /* float: none; */
+    position: relative;
+    
+
+}
+ 
+/* Dropdown - <a> properties */
+
+nav ul ul li a {
+    /* display: inline-block; */
+    /* padding: 0; */
+    
+    width: 100%;
+    background: gray;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+
+}
